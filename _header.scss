@@ -8,8 +8,13 @@
 
 @mixin background{
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:100%;
     flex-basis:100%;
+}
+
+div{
+    margin:auto;
+    max-width:1440px;
 }
 
 .nav-logo{
@@ -41,12 +46,13 @@ ul li{
 }
 
 ul li:first-child{
-    margin-left:380px;
+    margin-left:400px;
 }
 
 ul li:last-child{
     padding:4px;
     background-color:black;
+    color:white;
 }
 
 ul li a{

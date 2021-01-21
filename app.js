@@ -3,6 +3,17 @@ const navBar=document.getElementById("nav");
 const navCancel=document.getElementById("cancel");
 const dropDown=document.getElementById("dropdown");
 
+//When Navbar is clicked, dropdown should be made block;
+navBar.addEventListener("click", function(){
+    dropDown.style.display="block";   
+});
+
+
+//When Navcancel is clicked, dropdown should be made none;
+navCancel.addEventListener("click", function(){
+ dropDown.style.display="none";
+});
+
 
 function firstToggle(){
     navBar.addEventListener("click", function(){
@@ -53,16 +64,6 @@ function fourthToggle(){
     })
 };
 
-//When Navbar is clicked, dropdown should be made block;
- navBar.addEventListener("click", function(){
-           dropDown.style.display="block";   
-    });
-
-
-//When Navcancel is clicked, dropdown should be made none;
-navCancel.addEventListener("click", function(){
-        dropDown.style.display="none";
-    });
 
 
 

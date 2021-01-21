@@ -13,12 +13,13 @@
 }
 
 .footer{
-    height:300px;
+    min-height:300px;
     background-color:#332532;
 }
 
 .footer-01{
     flex-basis:33.33%;
+    height:300px;
 }
 
 .footer-01 p{

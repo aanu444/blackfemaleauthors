@@ -1,3 +1,8 @@
+div {
+  margin: auto;
+  max-width: 1440px;
+}
+
 .nav-logo {
   height: 200px;
   -ms-flex-preferred-size: 20%;
@@ -26,12 +31,13 @@ ul li {
 }
 
 ul li:first-child {
-  margin-left: 380px;
+  margin-left: 400px;
 }
 
 ul li:last-child {
   padding: 4px;
   background-color: black;
+  color: white;
 }
 
 ul li a {
@@ -52,7 +58,7 @@ ul li a:visited {
   background: url("images/header.jpg");
   height: 650px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -100,12 +106,12 @@ ul li a:visited {
 
 .aboutus-img {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   background: url("images/aboutus.jpg");
-  height: 450px;
-  background-size: cover;
+  height: 500px;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -116,7 +122,7 @@ ul li a:visited {
   border-radius: 70%;
   width: 20%;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 60px;
   background-color: #332532;
 }
 
@@ -152,12 +158,13 @@ ul li a:visited {
   background-color: #e3e3e6;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 250px;
+  height: 270px;
 }
 
 .panel {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
+  height: 270px;
 }
 
 .panel p {
@@ -172,13 +179,14 @@ ul li a:visited {
   line-height: 40px;
   margin-top: 50px;
   border-radius: 10px;
-  font-size: 1.2em;
   -webkit-box-shadow: 5px 5px 18px #2c2c2c;
           box-shadow: 5px 5px 18px #2c2c2c;
+  font-weight: bold;
 }
 
 .panel a {
   color: white;
+  font-size: 1.8em;
   text-decoration: none;
 }
 
@@ -189,7 +197,7 @@ ul li a:visited {
 .resources1 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  height: 410px;
+  height: 490px;
 }
 
 #res {
@@ -198,13 +206,13 @@ ul li a:visited {
 }
 
 .res-round {
-  height: 290px;
+  height: 400px;
   border: 2px solid #332532;
-  width: 70%;
-  margin-top: 50px;
-  border-radius: 70%;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 90%;
   background-color: #332532;
-  margin-left: 90px;
+  margin-left: 30px;
 }
 
 .res-round img {
@@ -214,8 +222,8 @@ ul li a:visited {
   width: 100%;
   height: 350px;
   z-index: 2;
-  margin-top: 50px;
-  margin-left: 40px;
+  margin-top: 110px;
+  margin-left: 60px;
 }
 
 .resources1 p {
@@ -223,27 +231,29 @@ ul li a:visited {
   padding: 10px;
   font-weight: bolder;
   margin-top: 80px;
-  font-size: 1.4em;
+  font-size: 1.7em;
 }
 
 .resources1 input {
   color: white;
-  padding: 5px;
+  padding: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.5em;
+  font-weight: bolder;
   border: 2px solid #2c2c2c;
   background-color: #2c2c2c;
 }
 
 .res-round-01 {
-  height: 290px;
+  height: 400px;
   border: 2px solid #332532;
-  width: 70%;
-  margin-top: 50px;
-  border-radius: 70%;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 90%;
   background-color: #332532;
-  margin-left: 90px;
+  margin-left: 30px;
   margin-left: 10px;
 }
 
@@ -254,25 +264,26 @@ ul li a:visited {
   width: 100%;
   height: 350px;
   z-index: 2;
-  margin-top: 50px;
-  margin-left: 40px;
+  margin-top: 110px;
+  margin-left: 60px;
   margin-left: 3px;
 }
 
 .res-adjust {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  height: 460px;
+  height: 530px;
 }
 
 .footer {
-  height: 300px;
+  min-height: 300px;
   background-color: #332532;
 }
 
 .footer-01 {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
+  height: 300px;
 }
 
 .footer-01 p {
@@ -375,6 +386,13 @@ div {
 
 .nav-bar img {
   display: none;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 319px) {
+  div {
+    margin: 0 auto;
+    width: 375px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
@@ -481,11 +499,15 @@ div {
   .panel {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 316px;
   }
   .panel p {
-    height: 180px;
+    height: 160px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .panel a {
+    font-size: 1em;
   }
   .res-small {
     display: none;
@@ -499,12 +521,17 @@ div {
     margin-top: 5px;
     font-size: 1.2em;
   }
+  .resources1 input {
+    padding: 10px;
+    font-size: 1em;
+  }
   .footer {
-    height: 710px;
+    height: 1000px;
   }
   .footer-01 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 330px;
   }
   .footer-01 img {
     height: 30px;
@@ -630,6 +657,7 @@ div {
   .panel {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 316px;
   }
   .panel p {
     height: 180px;
@@ -645,15 +673,20 @@ div {
     height: 250px;
   }
   .resources1 p {
-    margin-top: 5px;
-    font-size: 1.2em;
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  .resources1 input {
+    padding: 10px;
+    font-size: 0.7em;
   }
   .footer {
-    height: 710px;
+    height: 1000px;
   }
   .footer-01 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 333px;
   }
   .footer-01 img {
     height: 30px;
@@ -729,13 +762,13 @@ div {
   }
   .header-img {
     background-size: 100%;
-    height: 300px;
+    height: 250px;
   }
   .header-cover {
-    height: 300px;
+    height: 250px;
   }
   .header-cover p {
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 2em;
   }
   .books, .join {
@@ -747,20 +780,21 @@ div {
   }
   .aboutus-img {
     background-size: 100%;
-    height: 300px;
+    height: 250px;
   }
   .aboutus-header-txt {
     border-radius: 50%;
     height: 100px;
     margin-left: 10px;
     padding: 70px;
+    margin-top: 0px;
   }
   .aboutus-header-txt u {
     font-size: 1.5em;
   }
   .aboutus-header-txt span {
-    font-size: 0.7em;
-    text-align: center;
+    font-size: 0.6em;
+    text-align: justify;
   }
   .about-us-text p {
     font-size: 1.2em;
@@ -780,6 +814,7 @@ div {
   .panel {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 316px;
   }
   .panel p {
     height: 180px;
@@ -792,17 +827,23 @@ div {
   .resources1 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    height: 280px;
+    height: 300px;
   }
   .resources1 p {
     margin-top: 40px;
+    font-size: 1.2em;
+  }
+  .resources1 input {
+    padding: 10px;
+    font-size: 1.2em;
   }
   .footer {
-    height: 660px;
+    height: 860px;
   }
   .footer-01 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 286px;
   }
   .footer-01 img {
     height: 30px;
@@ -926,6 +967,7 @@ div {
   .panel {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 316px;
   }
   .panel p {
     height: 200px;
@@ -940,12 +982,17 @@ div {
     margin-left: 40px;
     width: 80%;
   }
+  .resources1 input {
+    font-size: 1.2em;
+    padding: 10px;
+  }
   .footer {
-    height: 660px;
+    height: 960px;
   }
   .footer-01 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    height: 320px;
   }
   .footer-01 img {
     height: 30px;
@@ -977,6 +1024,16 @@ div {
   ul li a {
     padding: 5px;
   }
+  .header-img {
+    width: 100%;
+    height: 450px;
+  }
+  .header-cover {
+    height: 450px;
+  }
+  .header-cover p {
+    margin-top: 180px;
+  }
   .aboutus-header-txt {
     height: 150px;
   }
@@ -989,6 +1046,9 @@ div {
   }
   .about-us-text p {
     font-size: 1.5em;
+  }
+  .panel a {
+    font-size: 0.8em;
   }
   .footer-01 p {
     font-size: 1em;
@@ -1017,6 +1077,138 @@ div {
   }
   ul li a {
     padding: 12px;
+  }
+  .panel a {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  div {
+    margin: 0 auto;
+    max-width: 2662px;
+    border: 0px solid black;
+  }
+  ul li:first-child {
+    margin-left: 24.5em;
+  }
+  ul li:last-child {
+    font-weight: bolder;
+    padding: 2.5em;
+  }
+  ul li a {
+    font-size: 2.6em;
+    line-height: 200px;
+  }
+  .nav-logo, .nav-bar {
+    height: 300px;
+  }
+  .header-img {
+    background-size: 100%;
+    height: 1000px;
+  }
+  .header-cover {
+    height: 1000px;
+  }
+  .header-cover p {
+    font-size: 6em;
+    margin-top: 420px;
+  }
+  .books p a, .join p a {
+    padding: 0.7em;
+    font-size: 2em;
+  }
+  .aboutus-img {
+    background-size: 100%;
+    height: 950px;
+  }
+  .aboutus-header-txt {
+    border-radius: 80%;
+    width: 40%;
+    height: 50vh;
+    padding: 100px;
+    margin-top: 0;
+  }
+  .aboutus-header-txt u {
+    font-size: 7.5em;
+  }
+  .aboutus-header-txt span {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+  }
+  .about-us-text {
+    min-height: 300px;
+  }
+  .about-us-text p {
+    font-size: 2.8em;
+  }
+  .panel-01 {
+    height: 40vh;
+  }
+  .panel {
+    height: 40vh;
+  }
+  .panel p {
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  .panel a {
+    font-size: 2em;
+    display: block;
+    margin-top: 20px;
+  }
+  .resources1 {
+    height: 60vh;
+  }
+  .res-round, .res-round-01 {
+    height: 50vh;
+  }
+  .res-round img, .res-round-01 img {
+    border: 0px solid black;
+    height: 550px;
+    margin-top: 280px;
+  }
+  .res-round img {
+    margin-left: 120px;
+  }
+  .res-round-01 img {
+    margin-left: 0px;
+  }
+  .resources1 p {
+    padding: 7px;
+    font-size: 3.8em;
+    margin-top: 130px;
+  }
+  .resources1 input {
+    padding: 40px;
+    font-size: 1.9em;
+  }
+  .footer-01 {
+    height: 500px;
+  }
+  .footer-01 p {
+    font-size: 2.4em;
+  }
+  .footer-01 span {
+    font-size: 2em;
+  }
+  .footer-01 input[type=text] {
+    margin-left: 80px;
+  }
+  .footer-about, .footer-about1 {
+    font-size: 2em;
+  }
+  .footer1 {
+    height: 650px;
+  }
+  .footer1 img {
+    height: 420px;
+  }
+  .footer1 p {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

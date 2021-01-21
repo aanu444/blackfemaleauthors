@@ -31,6 +31,13 @@ div {
     display:none;
 }
 
+@media only screen and (min-width:50px) and (max-width:319px){
+    div{
+        margin:0 auto;
+        width:375px;
+    }
+}
+
 @media only screen and (min-width:320px) and (max-width:374px){
     div{
         border:0px solid black;
@@ -153,12 +160,17 @@ div {
     
     .panel{
         flex-basis:100%;
+        height:316px;
     }
     
     .panel p{
-        height:180px;
+        height:160px;
         margin-left:auto;
         margin-right:auto;
+    }
+
+    .panel a{
+        font-size:1em;
     }
     
     .res-small{
@@ -174,13 +186,19 @@ div {
         margin-top:5px;
         font-size:1.2em;
     }
+
+    .resources1 input{
+        padding:10px;
+        font-size:1em;
+    }
     
     .footer{
-        height:710px;
+        height:1000px;
     }
     
     .footer-01{
         flex-basis:100%;
+        height:330px;
     }
     
     .footer-01 img{
@@ -330,6 +348,7 @@ padding:15px;
 
 .panel{
     flex-basis:100%;
+    height:316px;
 }
 
 .panel p{
@@ -348,16 +367,22 @@ padding:15px;
 }
 
 .resources1 p{
-    margin-top:5px;
-    font-size:1.2em;
+    margin-top:10px;
+    font-size:1em;
+}
+
+.resources1 input{
+    padding:10px;
+    font-size:0.7em;
 }
 
 .footer{
-    height:710px;
+    height:1000px;
 }
 
 .footer-01{
     flex-basis:100%;
+    height:333px;
 }
 
 .footer-01 img{
@@ -453,15 +478,15 @@ padding:15px;
 
     .header-img{
         background-size:100%;
-        height:300px;
+        height:250px;
     }
 
     .header-cover{
-        height:300px;
+        height:250px;
     }
 
     .header-cover p{
-        margin-top:100px;
+        margin-top:80px;
         font-size:2em;
     }
 
@@ -476,7 +501,7 @@ padding:15px;
 
     .aboutus-img{
         background-size:100%;
-        height:300px;
+        height:250px;
     }
 
     .aboutus-header-txt{
@@ -484,6 +509,7 @@ padding:15px;
         height:100px;
         margin-left:10px;
         padding:70px;
+        margin-top:0px;
     }
 
     .aboutus-header-txt u{
@@ -491,8 +517,8 @@ padding:15px;
     }
 
     .aboutus-header-txt span{
-        font-size:0.7em;
-        text-align:center;
+        font-size:0.6em;
+        text-align:justify;
     }
 
     .about-us-text p{
@@ -510,6 +536,7 @@ padding:15px;
 
     .panel{
         flex-basis:100%;
+        height:316px;
     }
 
     .panel p{
@@ -524,19 +551,26 @@ padding:15px;
 
     .resources1{
         flex-basis:100%;
-        height:280px;
+        height:300px;
     }
 
     .resources1 p{
         margin-top:40px;
+        font-size:1.2em;
+    }
+
+    .resources1 input{
+        padding:10px;
+        font-size:1.2em;
     }
 
     .footer{
-        height:660px;
+        height:860px;
     }
 
     .footer-01{
         flex-basis:100%;
+        height:286px;
     }
 
     .footer-01 img{
@@ -684,6 +718,7 @@ padding:15px;
 
     .panel{
     flex-basis:100%;
+    height:316px;
 }
 
     .panel p{
@@ -701,12 +736,18 @@ padding:15px;
         width:80%;
     }
 
+    .resources1 input{
+        font-size:1.2em;
+        padding:10px;
+    }
+
     .footer{
-        height:660px;
+        height:960px;
     }
 
     .footer-01{
         flex-basis:100%;
+        height:320px;
     }
 
     .footer-01 img{
@@ -748,6 +789,18 @@ padding:15px;
  ul li a {
      padding:5px;
  }
+ .header-img{
+     width:100%;
+     height:450px;
+ }
+
+ .header-cover{
+     height:450px;
+ }
+
+ .header-cover p{
+     margin-top:180px;
+ }
 
  .aboutus-header-txt{
      height:150px;
@@ -766,6 +819,10 @@ padding:15px;
  .about-us-text p{
      font-size:1.5em;
  }
+
+ .panel a{
+    font-size:0.8em;
+}
 
  .footer-01 p{
      font-size:1em;
@@ -794,7 +851,6 @@ padding:15px;
 }
 
 @media only screen and (min-width:933px) and (max-width:1024px){
-
    ul li:first-child{
        margin-left:260px;
    }
@@ -802,5 +858,176 @@ padding:15px;
    ul li a{
        padding:12px;
    }
+
+   .panel a{
+       font-size:1.2em;
+   }
 }
+
+@media only screen and (min-width:1441px){
+
+  div{
+      margin:0 auto;
+      max-width:2662px;
+      border:0px solid black;
+  }
+
+  ul li:first-child{
+      margin-left:24.5em; //Equivalent to 460px;
+  }
+
+ ul li:last-child {
+    font-weight:bolder;
+    padding:2.5em;
+
+}
+
+  ul li a{
+      font-size:1.3em * 2;
+      line-height:200px;
+  }
+
+  .nav-logo,.nav-bar{
+      height:300px;
+  }
+
+  .header-img{
+      background-size:100%;
+      height:1000px;
+  }
+
+  .header-cover{
+        height:1000px;
+  }
+
+  .header-cover p{
+      font-size:3em * 2;
+      margin-top:420px;
+  }
+
+  .books p a, .join p a{
+      padding:0.7em;
+      font-size:2em;
+  }
+
+  .aboutus-img{
+      background-size:100%;
+      height:950px;
+  }
+
+  .aboutus-header-txt{
+      border-radius:80%;
+      width:40%;
+      height:50vh;
+      padding:100px;
+      margin-top:0;
+  }
+
+  .aboutus-header-txt u{
+      font-size:2.5em *3;
+  }
+
+  .aboutus-header-txt span{
+      font-size:1em * 2;
+      text-align:center;
+      margin-top:0;
+    }
+
+    .about-us-text{
+        min-height:300px;
+    }
+
+    .about-us-text p{
+        font-size:1.4em * 2;
+    }
+
+    .panel-01{
+        height:40vh;
+    }
+
+    .panel{
+        height:40vh;
+
+    }
+
+    .panel p{
+        height:20vh;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:80px;
+    }
+
+    .panel a{
+        font-size:2em;
+        display:block;
+        margin-top:20px;
+    }
+
+    .resources1{
+        height:60vh;
+        
+    }
+
+    .res-round,.res-round-01{
+        height:50vh;
+    }
+
+    .res-round img, .res-round-01 img{
+        border:0px solid black;
+        height:550px;
+        margin-top:280px;
+    }
+
+    .res-round img {
+        margin-left:120px;
+    }
+
+    .res-round-01 img {
+        margin-left:0px;
+    }
+
+    .resources1 p{
+        padding:7px;
+        font-size:1.9em * 2;
+        margin-top:130px;
+    }
+
+    .resources1 input{
+        padding:40px;
+        font-size:1.9em;
+    }
+
+    .footer-01{
+        height:500px;
+    }
+
+    .footer-01 p{
+        font-size:1.2em *2;
+    }
+
+    .footer-01 span{
+        font-size:1em * 2;
+    }
+
+    .footer-01 input[type=text]{
+        margin-left:80px;
+    }
+
+    .footer-about, .footer-about1{
+        font-size:1em *2;
+    }
+
+    .footer1{
+        height:650px;
+    }
+
+    .footer1 img{
+        height:420px;
+    }
+
+    .footer1 p{
+        font-size:1em *2;
+    }
+}
+
 
